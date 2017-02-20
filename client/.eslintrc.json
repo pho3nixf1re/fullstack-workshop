@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "react/jsx-boolean-value": [2, "always"],
+    "react/no-multi-comp": 2,
+    "react/self-closing-comp": 2,
+    "react/jsx-wrap-multilines": 2,
+    "react/prop-types": 0
+  },
+  "extends": ["standard", "plugin:react/recommended"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "standard",
+    "react",
+    "promise"
+  ],
+  "parser": "babel-eslint"
+}

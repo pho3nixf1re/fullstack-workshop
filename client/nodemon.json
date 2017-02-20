@@ -1,0 +1,4 @@
+{
+  "verbose": true,
+  "ignore": ["*.test.js", "build/", "client/app/", "server/"]
+}
