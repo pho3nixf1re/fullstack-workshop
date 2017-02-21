@@ -66,6 +66,12 @@ The tests are ran using the [AVA](https://github.com/avajs/ava) test runner.
 
 ## Notes
 
+### Postman
+
+Included is a [Postman](https://www.getpostman.com/) collection. This will help
+working with the API to test the REST endpoints. Just import the included
+collection into the Postman app.
+
 ### Tools and Frameworks
 
 - [Node.js](https://nodejs.org/en/)

@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Fullstack Workshop",
+		"_postman_id": "f52f8a70-129a-c8fa-f2b8-b0533387cc82",
+		"description": "A collection of endpoints for the API used in the Fullstack Workshop.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "todos",
+			"description": "",
+			"item": [
+				{
+					"name": "List todos",
+					"request": {
+						"url": "http://localhost:3000/todos",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Returns list of todos."
+					},
+					"response": []
+				},
+				{
+					"name": "Create todo",
+					"request": {
+						"url": "http://localhost:3000/todos",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"description\": \"buy milk\"\n}"
+						},
+						"description": "Creates a new todo based on the passed JSON data."
+					},
+					"response": []
+				},
+				{
+					"name": "Show todo",
+					"request": {
+						"url": "http://localhost:3000/todos/{id}",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Returns a single todo."
+					},
+					"response": []
+				},
+				{
+					"name": "Remove a todo",
+					"request": {
+						"url": "http://localhost:3000/todos/{id}",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": "Removes a single todo."
+					},
+					"response": []
+				},
+				{
+					"name": "Update todo",
+					"request": {
+						"url": "http://localhost:3000/todos/{id}",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"description\": \"wash the car\"\n}"
+						},
+						"description": "Updates a todo."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
