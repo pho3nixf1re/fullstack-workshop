@@ -18,16 +18,7 @@ const Todos = ({ loading, todos }) => {
 
   return (
     <div>
-      {todos.map(({ id, description }) => (
-        <div key={id} style={styles.row}>
-          <a
-            href='#'
-            onClick={() => store.trigger('todos:remove', { id })}
-            style={styles.remove}
-          >X</a>
-          <div>{description}</div>
-        </div>
-      ))}
+      TODO: put list of todos here
     </div>
   )
 }

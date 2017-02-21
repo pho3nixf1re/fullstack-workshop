@@ -20,15 +20,13 @@ const styles = {
 }
 
 export const Root = ({ state }) => {
-  const { todos: { loading, data } } = state
-
   return (
     <div style={styles.container}>
       <h1>My todo list</h1>
       <div style={styles.new}>
         <NewTodo />
       </div>
-      <Todos loading={loading} todos={data} />
+      <Todos />
     </div>
   )
 }
