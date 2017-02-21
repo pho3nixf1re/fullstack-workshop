@@ -7,9 +7,10 @@
   "scripts": {
     "start:server": "NODE_ENV=development nodemon --config server/nodemon.json --exec node --harmony-async-await server/index.js",
     "start:client": "NODE_ENV=development nodemon --config client/nodemon.json --exec node_modules/.bin/webpack-dev-server -- --config client/webpack.config.js",
-    "test": "npm run test:server && npm run test:client",
     "test:server": "NODE_ENV=test node --harmony-async-await node_modules/.bin/ava server/**/*.test.js",
-    "test:client": "NODE_ENV=test ava server/**/*.test.js"
+    "test:client": "NODE_ENV=test ava server/**/*.test.js",
+    "lint:server": "eslint --config server/.eslintrc.json server",
+    "lint:client": "eslint --config client/.eslintrc.json client"
   },
   "dependencies": {
     "ava": "^0.18.2",
